@@ -29,3 +29,4 @@ G:\Projetos\TCC\Estudo-Grpc\Estudo_Grpc\Trabalho.Grpc\Trabalho.Grpc.Cliente\obj\
 G:\Projetos\TCC\Estudo-Grpc\Estudo_Grpc\Trabalho.Grpc\Trabalho.Grpc.Cliente\obj\Debug\net6.0\Trabalho.Grpc.Cliente.pdb
 G:\Projetos\TCC\Estudo-Grpc\Estudo_Grpc\Trabalho.Grpc\Trabalho.Grpc.Cliente\obj\Debug\net6.0\Trabalho.Grpc.Cliente.genruntimeconfig.cache
 G:\Projetos\TCC\Estudo-Grpc\Estudo_Grpc\Trabalho.Grpc\Trabalho.Grpc.Cliente\obj\Debug\net6.0\ref\Trabalho.Grpc.Cliente.dll
+G:\Projetos\TCC\Estudo-Grpc\Estudo_Grpc\Trabalho.Grpc\Trabalho.Grpc.Cliente\bin\Debug\net6.0\Grpc.Net.ClientFactory.dll

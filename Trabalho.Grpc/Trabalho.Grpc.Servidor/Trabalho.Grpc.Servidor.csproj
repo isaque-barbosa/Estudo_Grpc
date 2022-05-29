@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+    <!--<- GrpcServices podendo ser Client ou Bidirecional ->-->
+    <Protobuf Include="Protos\carrinho.proto" GrpcServices="Server" />
   </ItemGroup>
 
   <ItemGroup>

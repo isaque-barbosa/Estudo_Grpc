@@ -1,4 +1,6 @@
 ﻿using Microsoft.OpenApi.Models;
+using Trabalho.Grpc.Cliente.Services;
+using Trabalho.Grpc.Servidor.Protos;
 
 namespace Trabalho.Grpc.Cliente
 {
@@ -13,6 +15,13 @@ namespace Trabalho.Grpc.Cliente
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<ICarrinhoGrpcService, CarrinhoGrpcService>();
+
+            services.AddGrpcClient<CarrinhoCompras.CarrinhoComprasClient>(options =>
+            {
+                options.Address = new Uri(Configuration["GrpcServerUri"]);
+            });
+
             services.AddSwaggerGen(x =>
             {
                 x.SwaggerDoc("v1", new OpenApiInfo

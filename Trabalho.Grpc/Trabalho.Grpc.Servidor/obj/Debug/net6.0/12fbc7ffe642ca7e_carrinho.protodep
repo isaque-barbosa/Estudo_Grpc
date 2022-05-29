@@ -1,0 +1,2 @@
+obj\Debug\net6.0\Protos/Carrinho.cs \
+obj\Debug\net6.0\Protos/CarrinhoGrpc.cs: Protos/carrinho.proto

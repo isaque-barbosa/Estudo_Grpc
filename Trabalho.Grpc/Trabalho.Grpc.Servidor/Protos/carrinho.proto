@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+option csharp_namespace = "Trabalho.Grpc.Servidor.Protos";
+
+package CarrinhoAPI;
+
+service CarrinhoCompras {
+	rpc ObterCarrinho(ObterCarrinhoRequest) returns (CarrinhoClienteResponse) {}
+	//rpc ObterCarrinho(ObterCarrinhoRequest) returns (CarrinhoClienteResponse) {}
+	//rpc ObterCarrinho(ObterCarrinhoRequest) returns (CarrinhoClienteResponse) {}
+}
+
+message ObterCarrinhoRequest {
+	string clienteId = 1;
+}
+
+message CarrinhoClienteResponse {
+	string id = 1;
+	string clienteId = 2;
+	double valorTotal = 3;
+	repeated CarrinhoItemResponse itens = 4;
+	bool voucherUtilizado = 5;
+	double desconto = 6;
+	VoucherResponse voucher = 7;
+}
+
+message CarrinhoItemResponse {
+	string id = 1;
+	string peodutoId = 2;
+	string nome = 3;
+	int32 quantidade = 4;
+	double valor = 5;
+	string imagem = 6;
+}
+
+message VoucherResponse {
+	double percentual = 1;
+	double valorDesconto = 2;
+	string codigo = 3;
+	int32 tipoDesconto = 4;
+}

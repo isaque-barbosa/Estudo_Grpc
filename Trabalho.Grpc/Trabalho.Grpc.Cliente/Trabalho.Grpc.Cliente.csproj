@@ -11,6 +11,7 @@
   <ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.20.1" />
     <PackageReference Include="Grpc.Net.Client" Version="2.46.0" />
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.46.0" />
     <PackageReference Include="Grpc.Tools" Version="2.46.3">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -22,8 +23,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.3.1" />
   </ItemGroup>
 
+  <!--Caso não esteja no mesmo diretório os projetos, é necessário copiar o proto, o cliente precisa ter e precisa ser mantido os dois iguais-->
   <ItemGroup>
-    <Protobuf Include="..\Trabalho.Grpc.Servidor\Protos\greet.proto" GrpcServices="Client" />
+    <Protobuf Include="..\Trabalho.Grpc.Servidor\Protos\carrinho.proto" GrpcServices="Client" />
   </ItemGroup>
 
 </Project>
